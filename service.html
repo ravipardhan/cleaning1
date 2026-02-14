@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Book professional home cleaning service in Ahmedabad. Deep cleaning, kitchen, bathroom & full house cleaning at affordable prices.">
+<title>Home Cleaning Service in Ahmedabad | Starting ₹1499</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="logo.png" type="image/png">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">Shyam Cleaning Service</div>
+    <nav>
+        <ul id="nav-links">
+            <i class="fas fa-times menu-close-btn" onclick="toggleMenu()"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="services-hero">
+        <div class="overlay"></div>
+        <div class="hero-content reveal">
+        
+            <p>Find and book trusted cleaning professionals for your home and office instantly.</p>
+            <a href="https://wa.me/919662755375?text=Hello%20Shyam%20Cleaning%20Service%2C%20I'd%20like%20to%20book%20a%20service." class="btn" target="_blank">Book Instantly on WhatsApp</a>
+        </div>
+        <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:15;"></span>
+        </div>
+    </section>
+
+    <section id="services" class="service-catalog-section reveal">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Professional Services</h2>
+            <p>Explore our wide range of cleaning services tailored for your needs.</p>
+        </div>
+
+        <!-- Controls: Filter and Search -->
+        <div class="service-controls">
+            <div class="search-bar">
+                <input type="text" id="service-search" placeholder="Search for services...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="home">Home</button>
+                <button class="filter-btn" data-filter="office">Office</button>
+                <button class="filter-btn" data-filter="special">Special</button>
+            </div>
+        </div>
+
+        <!-- Service Grid -->
+        <div class="service-grid">
+            <!-- Card 1: Full Home Cleaning -->
+            <div class="service-card" data-category="home" data-name="Full Home Cleaning" data-price="1499">
+                <div class="badge-container">
+                    <span class="badge badge-popular">Most Popular</span>
+                </div>
+                <img src="Full Home Cleaning.webp" alt="Full home cleaning service for a 2BHK in Ahmedabad" loading="lazy">
+                <div class="card-content">
+                    <h3>Full Home Cleaning</h3>
+                    <p>A complete top-to-bottom cleaning for your entire home. Perfect for a 1BHK, 2BHK, or 3BHK house, ensuring a fresh and healthy environment.</p>
+                    <div class="price">₹1499 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Apartment Cleaning -->
+            <div class="service-card" data-category="home" data-name="Apartment Cleaning" data-price="999">
+                <img src="Apartment Cleaning.webp" alt="Affordable apartment deep cleaning service" loading="lazy">
+                <div class="card-content">
+                    <h3>Apartment Cleaning</h3>
+                    <p>Specialized cleaning services tailored for apartments and flats of all sizes.</p>
+                    <div class="price">₹999 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Office cleaning -->
+            <div class="service-card" data-category="office" data-name="Office Cleaning" data-price="1999">
+                <img src="Office Cleaning.jpg" alt="Corporate office cleaning service in Ahmedabad" loading="lazy">
+                <div class="card-content">
+                    <h3>Office Cleaning</h3>
+                    <p>Professional and reliable cleaning services for a pristine and productive workspace.</p>
+                    <div class="price">₹1999 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Bungalow Cleaning -->
+            <div class="service-card" data-category="home" data-name="Bungalow Cleaning" data-price="2999">
+                <img src="Bungalow Cleaning.jpeg" alt="Bungalow cleaning services in Ahmedabad" loading="lazy">
+                <div class="card-content">
+                    <h3>Bungalow Cleaning</h3>
+                    <p>Comprehensive cleaning for large bungalows, including all rooms and exterior areas.</p>
+                    <div class="price">₹2999 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Villa Cleaning -->
+            <div class="service-card" data-category="home" data-name="Villa Cleaning" data-price="3499">
+                <img src="Villa Cleaning.webp" alt="Luxury villa deep cleaning service" loading="lazy">
+                <div class="card-content">
+                    <h3>Villa Cleaning</h3>
+                    <p>Premium cleaning services for luxury villas, with attention to every detail.</p>
+                    <div class="price">₹3499 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Room-Wise Cleaning -->
+            <div class="service-card" data-category="home" data-name="Room-Wise Cleaning" data-price="299">
+                <img src="Room-Wise Cleaning.jpg" alt="Single room cleaning service" loading="lazy">
+                <div class="card-content">
+                    <h3>Room-Wise Cleaning</h3>
+                    <p>Need just one room cleaned? Select our flexible room-wise cleaning service.</p>
+                    <div class="price">₹299 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7: Balcony Cleaning -->
+            <div class="service-card" data-category="home" data-name="Balcony Cleaning" data-price="199">
+                <img src="Balcony Cleaning.jpg" alt="Balcony Cleaning" loading="lazy">
+                <div class="card-content">
+                    <h3>Balcony Cleaning</h3>
+                    <p>Get your balcony cleaned and ready for you to relax and enjoy the view.</p>
+                    <div class="price">₹199 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8: Terrace Cleaning -->
+            <div class="service-card" data-category="home" data-name="Terrace Cleaning" data-price="499">
+                <img src="Terrace Cleaning.jpg" alt="Terrace Cleaning" loading="lazy">
+                <div class="card-content">
+                    <h3>Terrace Cleaning</h3>
+                    <p>Complete cleaning and washing of your terrace or rooftop area.</p>
+                    <div class="price">₹499 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9: Fan cleaning -->
+            <div class="service-card" data-category="special" data-name="Fan Cleaning" data-price="99">
+                <img src="Fan Cleaning.webp" alt="Fan Cleaning" loading="lazy">
+                <div class="card-content">
+                    <h3>Fan Cleaning</h3>
+                    <p>Professional cleaning for all types of ceiling and exhaust fans.</p>
+                    <div class="price">₹99 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 10: Sofa Cleaning -->
+            <div class="service-card" data-category="special" data-name="Sofa Cleaning" data-price="499">
+                <div class="badge-container">
+                    <span class="badge badge-discount">20% OFF</span>
+                </div>
+                <img src="sofa-cleaning-service.jpg" alt="Professional sofa shampoo cleaning" loading="lazy">
+                <div class="card-content">
+                    <h3>Sofa Cleaning</h3>
+                    <p>Revitalize your furniture with our professional sofa shampoo cleaning. We remove tough stains and restore freshness to your upholstery.</p>
+                    <div class="price">₹499 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 11: Carpet Cleaning -->
+            <div class="service-card" data-category="special" data-name="Carpet Cleaning" data-price="799">
+                <img src="Carpet Cleaning.jpg" alt="Carpet shampoo cleaning service near me" loading="lazy">
+                <div class="card-content">
+                    <h3>Carpet Cleaning</h3>
+                    <p>Remove deep-seated dirt and allergens, restoring your carpet's freshness.</p>
+                    <div class="price">₹799 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 12: Bathroom Deep Cleaning -->
+            <div class="service-card" data-category="home" data-name="Bathroom Deep Cleaning" data-price="399">
+                <img src="Bathroom Deep Cleaning.jpg" alt="Bathroom Deep Cleaning" loading="lazy">
+                <div class="card-content">
+                    <h3>Bathroom Deep Cleaning</h3>
+                    <p>Intensive cleaning and sanitization for a hygienic and sparkling bathroom.</p>
+                    <div class="price">₹399 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 13: Kitchen Deep Cleaning -->
+            <div class="service-card" data-category="home" data-name="Kitchen Deep Cleaning" data-price="599">
+                <img src="Kitchen Deep Cleaning.jpg" alt="Kitchen grease and chimney cleaning service" loading="lazy">
+                <div class="card-content">
+                    <h3>Kitchen Deep Cleaning</h3>
+                    <p>Our kitchen deep cleaning includes complete grease removal, modular kitchen cleaning, and chimney cleaning for a spotless, hygienic space.</p>
+                    <div class="price">₹599 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 14: Chimney Cleaning -->
+            <div class="service-card" data-category="special" data-name="Chimney Cleaning" data-price="299">
+                <img src="Chimney Cleaning.jpg" alt="Chimney Cleaning" loading="lazy">
+                <div class="card-content">
+                    <h3>Chimney Cleaning</h3>
+                    <p>Expert cleaning for your kitchen chimney to ensure it's working efficiently.</p>
+                    <div class="price">₹299 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 15: Shop Cleaning -->
+            <div class="service-card" data-category="office" data-name="Shop Cleaning" data-price="1499">
+                <img src="Shop Cleaning.jpg" alt="Shop Cleaning" loading="lazy">
+                <div class="card-content">
+                    <h3>Shop Cleaning</h3>
+                    <p>Keep your retail space clean and inviting for your customers.</p>
+                    <div class="price">₹1499 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 16: Showroom Cleaning -->
+            <div class="service-card" data-category="office" data-name="Showroom Cleaning" data-price="2499">
+                <img src="Showroom Cleaning.avif" alt="Showroom Cleaning" loading="lazy">
+                <div class="card-content">
+                    <h3>Showroom Cleaning</h3>
+                    <p>Premium cleaning for showrooms to make your products shine.</p>
+                    <div class="price">₹2499 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 17: Restaurant Cleaning -->
+            <div class="service-card" data-category="office" data-name="Restaurant Cleaning" data-price="3999">
+                <img src="Restaurant Cleaning.avif" alt="Restaurant Cleaning" loading="lazy">
+                <div class="card-content">
+                    <h3>Restaurant Cleaning</h3>
+                    <p>Maintain hygiene standards with our specialized restaurant cleaning services.</p>
+                    <div class="price">₹3999 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 18: Hotel Cleaning -->
+            <div class="service-card" data-category="office" data-name="Hotel Cleaning" data-price="4999">
+                <img src="Hotel Cleaning.jpg" alt="Hotel Cleaning" loading="lazy">
+                <div class="card-content">
+                    <h3>Hotel Cleaning</h3>
+                    <p>Comprehensive cleaning solutions for hotels, guesthouses, and resorts.</p>
+                    <div class="price">₹4999 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 19: Warehouse Cleaning -->
+            <div class="service-card" data-category="office" data-name="Warehouse Cleaning" data-price="5999">
+                <img src="Warehouse Cleaning.jpg" alt="Warehouse Cleaning" loading="lazy">
+                <div class="card-content">
+                    <h3>Warehouse Cleaning</h3>
+                    <p>Industrial-grade cleaning for large warehouses and storage facilities.</p>
+                    <div class="price">₹5999 onwards</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Book on WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 20: Other Service -->
+            <div class="service-card" data-category="special" data-name="Other Service" data-price="0">
+                <img src="Other Service.jpg" alt="Other Service" loading="lazy">
+                <div class="card-content">
+                    <h3>Other Service</h3>
+                    <p>Have a custom cleaning request? Contact us for a personalized quote.</p>
+                    <div class="price">Contact for Price</div>
+                    <div class="card-buttons">
+                        <a href="service.html" class="btn-details">View Details</a>
+                        <button class="btn-whatsapp">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-services">
+            <a href="service.html" class="btn">View All Services</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <div class="footer-logo">Shyam Cleaning</div>
+                <p>Transforming spaces with a professional touch. We are committed to providing top-notch cleaning services for homes and offices in Ahmedabad.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/919662755375"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="service.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="booking.html"><i class="fas fa-chevron-right"></i> Booking</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="service.html"><i class="fas fa-chevron-right"></i> Home Cleaning</a></li>
+                    <li><a href="service.html"><i class="fas fa-chevron-right"></i> Office Cleaning</a></li>
+                    <li><a href="service.html"><i class="fas fa-chevron-right"></i> Sofa Cleaning</a></li>
+                    <li><a href="service.html"><i class="fas fa-chevron-right"></i> Deep Cleaning</a></li>
+                    <li><a href="service.html"><i class="fas fa-chevron-right"></i> Water Tank</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="contact-details">
+                    <li><i class="fas fa-map-marker-alt"></i> <span>PRL Colony, Bodakdev, Ahmedabad, Gujarat 380059</span></li>
+                    <li><i class="fas fa-phone-alt"></i> <span>+91 9662755375</span></li>
+                    <li><i class="fas fa-envelope"></i> <span>devankpatidar5375@gmail.com</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>Shyam Cleaning Service</strong>. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/919999999999" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Back to Top Button -->
+<a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+<!-- Service Detail Modal -->
+<div id="service-detail-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close-modal">&times;</span>
+            <img id="modal-service-img" src="" alt="Service Image">
+        </div>
+        <div class="modal-body">
+            <h3 id="modal-service-name"></h3>
+            <div class="modal-price" id="modal-service-price"></div>
+            <p id="modal-service-desc"></p>
+            <button class="btn btn-whatsapp" id="modal-book-btn" style="width: 100%;">Book This Service</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Book your cleaning service online in Ahmedabad and get the best price, guaranteed. Fast, easy, and secure booking for home, office, and deep cleaning services.">
+<title>Book Cleaning Service Online in Ahmedabad – Best Price Guaranteed</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="logo.png" type="image/png">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">Shyam Cleaning Service</div>
+    <nav>
+        <ul id="nav-links">
+            <i class="fas fa-times menu-close-btn" onclick="toggleMenu()"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="booking-hero">
+        <div class="hero-content reveal">
+            <h1>Booking</h1>
+            <p>Schedule your service.</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="booking-benefits reveal">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Flexible Scheduling</h3>
+                    <p>Pick a date and time that suits your lifestyle.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Verified Experts</h3>
+                    <p>Background-checked professionals you can trust.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Satisfaction Guaranteed</h3>
+                    <p>We ensure you are happy with our service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section reveal">
+        <div class="booking-wrapper">
+            <div class="booking-header">
+                <h2>Secure Your Slot</h2>
+                <p>Fill in your details below to confirm your appointment.</p>
+            </div>
+            <div class="booking-body">
+                <form id="booking-form" onsubmit="return validateBookingForm()">
+                    <div class="form-section">
+                        <div class="form-group">
+                            <label for="service-type">Select Service</label>
+                            <select id="service-type" name="service-type" required>
+                                <option value="">--Please choose a service--</option>
+                                <option value="Full Home Cleaning">Full Home Cleaning</option>
+                                <option value="Apartment Cleaning">Apartment Cleaning</option>
+                                <option value="Office Cleaning">Office Cleaning</option>
+                                <option value="Bungalow Cleaning">Bungalow Cleaning</option>
+                                <option value="Villa Cleaning">Villa Cleaning</option>
+                                <option value="Room-Wise Cleaning">Room-Wise Cleaning</option>
+                                <option value="Balcony Cleaning">Balcony Cleaning</option>
+                                <option value="Terrace Cleaning">Terrace Cleaning</option>
+                                <option value="Fan Cleaning">Fan Cleaning</option>
+                                <option value="Sofa Cleaning">Sofa Cleaning</option>
+                                <option value="Carpet Cleaning">Carpet Cleaning</option>
+                                <option value="Bathroom Deep Cleaning">Bathroom Deep Cleaning</option>
+                                <option value="Kitchen Deep Cleaning">Kitchen Deep Cleaning</option>
+                                <option value="Chimney Cleaning">Chimney Cleaning</option>
+                                <option value="Shop Cleaning">Shop Cleaning</option>
+                                <option value="Showroom Cleaning">Showroom Cleaning</option>
+                                <option value="Restaurant Cleaning">Restaurant Cleaning</option>
+                                <option value="Hotel Cleaning">Hotel Cleaning</option>
+                                <option value="Warehouse Cleaning">Warehouse Cleaning</option>
+                                <option value="Water Tank Cleaning">Water Tank Cleaning</option>
+                                <option value="Other Service">Other Service</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-date">Preferred Date</label>
+                            <input type="date" id="booking-date" name="booking-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Time Slot</label>
+                            <div class="time-slots">
+                                <input type="radio" id="slot1" name="time-slot" value="09:00-11:00" required><label for="slot1">09-11 AM</label>
+                                <input type="radio" id="slot2" name="time-slot" value="11:00-13:00"><label for="slot2">11-01 PM</label>
+                                <input type="radio" id="slot3" name="time-slot" value="14:00-16:00"><label for="slot3">02-04 PM</label>
+                                <input type="radio" id="slot4" name="time-slot" value="16:00-18:00"><label for="slot4">04-06 PM</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Full Address</label>
+                            <textarea id="address" name="address" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="reference-image">Upload Reference Image (Optional)</label>
+                            <input type="file" id="reference-image" name="reference-image" accept="image/*">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <div class="footer-logo">Shyam Cleaning</div>
+                <p>Transforming spaces with a professional touch. We are committed to providing top-notch cleaning services for homes and offices in Ahmedabad.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/919662755375"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="service.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="booking.html"><i class="fas fa-chevron-right"></i> Booking</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="service.html"><i class="fas fa-chevron-right"></i> Home Cleaning</a></li>
+                    <li><a href="service.html"><i class="fas fa-chevron-right"></i> Office Cleaning</a></li>
+                    <li><a href="service.html"><i class="fas fa-chevron-right"></i> Sofa Cleaning</a></li>
+                    <li><a href="service.html"><i class="fas fa-chevron-right"></i> Deep Cleaning</a></li>
+                    <li><a href="service.html"><i class="fas fa-chevron-right"></i> Water Tank</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="contact-details">
+                    <li><i class="fas fa-map-marker-alt"></i> <span>PRL Colony, Bodakdev, Ahmedabad, Gujarat 380059</span></li>
+                    <li><i class="fas fa-phone-alt"></i> <span>+91 9662755375</span></li>
+                    <li><i class="fas fa-envelope"></i> <span>devankpatidar5375@gmail.com</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>Shyam Cleaning Service</strong>. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Success Popup -->
+<div id="success-popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h3>Success!</h3>
+        <p>Your booking has been confirmed. We will contact you shortly.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
